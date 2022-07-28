@@ -402,3 +402,164 @@ body {
   margin-top: 0.125%;
   font-weight: 400;
 }
+
+.function {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F7FF;
+
+}
+
+.title h3 {
+  margin: 4.6% 0 3.5% 0;
+  line-height: 32px;
+  text-align: center;
+  font-size: 26;
+  color: var(--blue);
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 7.777%;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content-square {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right:2.6%;
+  align-items: stretch;
+  background-color: hsla(224, 91%, 43%, 0.1);
+}
+
+.content-square h3{
+  width: auto;
+  height: auto;
+  margin: 32px 32px 0 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.square-btn {
+  width: auto;
+  height: auto;
+  margin: 24px 0 0 32px;
+}
+
+.btn-square {
+  padding:8px 16px;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  line-height: 24px;
+}
+
+.btn-square i {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  
+}
+
+.content-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.context-text {
+  width: 100%;
+  height: 100%;
+  margin-left: 24px;
+}
+.content-text h3 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size:20;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--darkblue);
+}
+.content-text p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--textcolor);
+}
+
+
+
+.line1{
+  margin: 32px 0;
+}
+#content2 {
+  margin: 16px 0;
+}
+
+#content2 .content-square {
+  background-color: hsla(256, 91%, 43%, 0.1);
+}
+
+#content2 .content-square .btn-square {
+  background-color: #3E0AD0;
+}
+
+#content2 .content-square h3 {
+  color: #3E0AD0;
+}
+
+#content3 .content-square {
+  background-color: hsla(185, 91%, 43%, 0.1);
+}
+
+#content3 .content-square .btn-square {
+  background-color: #0AC0D1;
+}
+
+#content3 .content-square h3 {
+  color: #0AC0D1;
+}
