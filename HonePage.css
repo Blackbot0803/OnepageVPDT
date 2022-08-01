@@ -368,6 +368,7 @@ body {
   padding: 48px 7.777% 0 7.777%;
   box-sizing: border-box;
   padding-bottom: 11.2%;
+  border-radius: 0px;
   
 }
 
@@ -376,7 +377,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #C4C4C4;
+  border: 0px solid #C4C4C4;
   border-radius: 16px;
   -webkit-box-shadow: 0px 0px 49px 1px rgba(0,0,0,0.11); 
   box-shadow: 0px 0px 49px 1px rgba(0,0,0,0.11);
@@ -779,8 +780,14 @@ body {
   line-height: 24px;
   
 }
+.signin-100-button p {
+  margin: 16px 0;
+  padding: 0;
+}
 
 .signin-100-button {
+  display: flex;
+  flex-direction: row;
   width: auto;
   height: 60%;
 	border-radius:50px;
@@ -792,12 +799,12 @@ body {
 	font-family: 'Roboto', sans-serif;
   font-weight: 500;
 	font-size: 20px;
-	padding: 8px ;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
-  padding: 16px 24px;
   line-height: 24px;
   column-gap: 8px;
+  align-items: center;
+  padding: 0 24px;
 }
 
 .bottom-container {
