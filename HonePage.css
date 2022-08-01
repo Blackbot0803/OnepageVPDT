@@ -91,6 +91,7 @@ input[type=text], select {
   color: #fff;
   border-radius: 4px;
   border-style: none;
+  cursor: pointer;
 }
 .overlay .closebtn {
   position: absolute;
