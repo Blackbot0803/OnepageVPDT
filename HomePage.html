@@ -10,9 +10,40 @@
         <link rel="stylesheet" href="HonePage.css">
 		<script src="https://kit.fontawesome.com/65a2c1a9b8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="">
+        <script type="text/javascript" src="HomePage.js"></script>
 		
     </head>
     <body>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+             <div class="overlay-title"><h3>ĐĂNG KÍ DÙNG THỬ</h3></div>
+             <div class="overlay-form">
+                <form class="form">
+                    <div class="input-line">
+                        <input type="text" name="fName" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" name="phoneNumber" placeholder="Số điện thoại" required>
+                        <input type="text" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" name="companyName" placeholder="Tên doanh nghiệp" required>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" name="role" placeholder="Chức vụ" required>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" name="address" placeholder="Địa chỉ" required>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" name="scale" placeholder="Quy mô" required>
+                    </div>
+                    <button class="form-button" type="submit">ĐĂNG KÍ</button>
+                </form>
+             </div>
+            </div>
+          </div>
         <div class="container">
             <div class="top-container">
                 <div class="banner">
@@ -52,7 +83,7 @@
 								truyền thống sang mô hình doanh nghiệp số.
 							</div>
 							<div class="banner_button">
-								<Button class="banner_btn">Đăng kí dùng thử
+								<Button class="banner_btn" onclick = "openNav()">Đăng kí dùng thử
 									<i class="fa-solid fa-circle-arrow-right" style="font-size:24px; vertical-align: middle;"></i>
 								</Button>
 							</div>
