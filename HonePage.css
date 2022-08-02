@@ -462,7 +462,7 @@ input[type=text], select {
   
 }
 
-.solution {
+.solution-context {
   
   height: auto;
   display: flex;
@@ -732,8 +732,9 @@ input[type=text], select {
 }
 
 .faq-img {
+  width: auto;
   height: 100%;
-  margin-left: 112px;
+  margin-left: 7.777%;
   padding: 0;
   
 }
@@ -1066,4 +1067,155 @@ input[type=text], select {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px)  {
+  .solution-content {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    row-gap: 3.222%;
+    padding: 3.333% ;
+  }
+  .sol2 {
+    margin: 3.333% 0 3.333% 0;
+  }
+  .solution {
+    width: 100%;
+  }
+  .faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 7.777%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar {
+    display: none;
+  }
+  .banner-content {
+    flex-direction: column;
+  }
+  .banner-content-text-title p {
+    width: 100%;
+    word-wrap: none;
+  }
+
+  .content-square {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .content-square h3 {
+    margin-top: 3.333%;
+  }
+  .square-btn {
+    margin : 1.666% 0 3.333% 0;
+    
+  }
+  .content-line {
+    flex-direction: column;
+    row-gap: 2.222%;
+    
+  }
+
+  .line1 {
+    margin: 2.222% 0;
+  }
+  .item1{
+    margin-bottom: 2.222%;
+  }
+  .moreinfo {
+    width: 100%;
+  }
+  .moreinfo {
+    width: 100%;
+  }
+  .btn-solution {
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-container {
+    box-sizing: border-box;
+    flex-direction: column;
+    row-gap: 2% ;
+    padding: 0 7.777%;
+  }
+  .bottom-address {
+    
+    margin: 4.177% 0 2.222% 0;
+  }
+  .bottom-solution {
+    margin: 4.177% 0 2.222% 0;
+  }
+  .faq-img {
+    width: 80%;
+    margin: 7.777%;
+    height: 80%;
+  }
+  .faq-image {
+    width: 100%;
+  }
+  .faq-wrapper {
+    padding: 0;
+  }
+  .faq-context-line {
+    width: 84.446%;
+    align-self: center  ;
+  }
+  .faq-title{
+    text-align: center;
+    margin-bottom: 3.33%;
+  }
+  .faq-text {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .faq-context {
+    margin: 0 0 4.167% 0;
+    width: 100%;
+  }
+  .overlay {
+    left: 0;
+    height: 100%;
+  }
+  .signin-100 {
+    padding: 4.167% 0;
+  }
+  .signin-100-title {
+    margin: 0 7.777%;
+  }
+  .signin-100-context{
+    margin: 2.222% 7.777%
+  }
+  .input-line {
+    flex-direction: column;
+  }
+  input[type=text], select {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+}
+
+.input-line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 8px;
+}
+input[type=text], select {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
 }
