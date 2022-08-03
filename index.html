@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width,  initial-scale=0.8">        <title>HomePage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="HonePage.css">
 		<script src="https://kit.fontawesome.com/65a2c1a9b8.js" crossorigin="anonymous"></script>
@@ -13,8 +15,8 @@
 		
     </head>
     <body>
-        <!-- Overlay signup form  -->
-        <div id="myNav" class="overlay">
+         <!-- Overlay signup form  -->
+         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
              <div class="overlay-title"><h3>ĐĂNG KÍ DÙNG THỬ</h3></div>
@@ -44,7 +46,7 @@
              </div>
             </div>
           </div>
-        <div class="container">
+        <div class="wrapper">
             <div class="top-container">
                 <div class="banner">
                     <div class="header">
@@ -64,7 +66,7 @@
                         <div class="navbar-content"><a href="#home">CÂU HỎI THƯỜNG GẶP</a></div>
                         <div class="navbar-content"><a href="#home">LIÊN HỆ</a></div>
                       </div>
-                      <div class="signin-button"><Button class="signin">ĐĂNG KÝ NGAY</Button></div>
+                      <div class="signin-button"><Button class="signin" onclick = "openNav()">ĐĂNG KÝ NGAY</Button></div>
                     </div>
                     <div class="banner-content">
 						<div class="banner-content_text">
@@ -367,24 +369,106 @@
                         <div class="faq-title">
                             <h3>CÂU HỎI THƯỜNG GẶP</h3>
                         </div>
-                        <div class="faq-context">
-                           <div class="faq-context-line">
-                            <p>Tại sao doanh nghiệp nên có một website chuyên nghiệp?</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                           </div>
-                           <div class="faq-context-line">
-                            <p>Hệ thống văn phòng điện tử dành cho những doanh nghiệp nào?</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                           </div>
-                           <div class="faq-context-line">
-                            <p>Chi phí và khả năng ứng dụng của hệ thống văn phòng điện tử dành cho doanh nghiệp</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                           </div>
-                           <div class="faq-context-line">
-                            <p>Những khó khăn của doanh nghiệp khi kinh doanh trên sàn thương mại điện tử?</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                           </div>
-                        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Tại sao doanh nghiệp nên có một website chuyên nghiệp?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body accordion1">
+                                    <p>Việc thiết lập sự hiện diện của Doanh nghiệp trên Internet tạo ra cơ hội tiếp xúc với khách hàng ở mọi nơi và tại mọi thời điểm; 
+                                        giúp Doanh nghiệp giới thiệu các sản phẩm, dịch vụ và tạo sự tin tưởng của khách hàng trước khi có ý định sử dụng sản phẩm, dịch vụ của Doanh nghiệp; 
+                                        Tạo dựng hình ảnh chuyên nghiệp cho Doanh nghiệp và gia tăng các cơ hội bán hàng, hợp tác… mà không tốn nhiều chi phí. </p>
+                                    
+                                    <p>Đối với doanh nghiệp thì website có các chức năng sau: </p>
+                                    <p><b>E-brochure:</b> Website có thể đóng vai trò một brochure giới thiệu về công ty, sản phẩm và dịch vụ cung cấp với những hình ảnh 
+                                       và có thể có các file âm thanh và hình ảnh phong phú, sống động. Đối tác, khách hàng có thể truy cập vào xem một cách nhanh chóng, 
+                                       không mất thời gian chờ đợi gửi qua đường bưu điện. Doanh nghiệp tiết kiệm được rất nhiều chi phí in ấn, gửi thư và luôn cập nhật 
+                                       được thông tin một cách thuận lợi. Đây cũng là một phương tiện xây dựng hình ảnh công ty chuyên nghiệp trong mắt khách hàng. 
+                                    </p>
+                                    <p><b>E-catalogue:</b> Trên website, doanh nghiệp có thể đưa những catalogue đầy đủ nhất về sản phẩm với những hình ảnh và thông tin chi tiết của mỗi sản phẩm. 
+                                       Khách hàng có thể tìm sản phẩm theo thuộc tính, theo mã hàng, theo giá cả,... một cách nhanh chóng. </p>
+                                    <p><b>E-shop:</b> E-catalogue có thể tích hợp những tính năng đặt hàng, hoặc có thể có chức năng thanh toán trực tuyến để trở thành một công cụ bán hàng của doanh nghiệp. </p>
+                                    <p>
+                                        <b>E-support:</b> Doanh nghiệp có thể hỗ trợ khách hàng thông qua website như giải đáp các thắc mắc, tư vấn, cung cấp tài liệu kỹ thuật, 
+                                        đăng ký bảo hành, và có thể chat trực tuyến với khách hàng. Thông qua website, khách hàng cũng có thể liên hệ với doanh nghiệp một cách nhanh nhất. 
+                                    </p>
+                                    <p><b>Công cụ cung cấp thông tin:</b> Website là một công cụ cung cấp thông tin quan trọng của doanh nghiệp không những cho đối tượng khách hàng 
+                                        mà còn cho các đối tượng khác như: nhà đầu tư, cổ đông, đối tác, thông tin đại chúng.</p> 
+                                    <p>Ngoài ra, các ứng dụng web rất phong phú và đa dạng có thể ứng dụng trong rất nhiều hoạt động sản xuất và kinh doanh của doanh nghiệp. </p>
+                                    <p>Một website tốt là công cụ truyền thông nội bộ tập trung, chính xác; giúp tạo dựng thương hiệu tốt cho Doanh nghiệp ra bên ngoài; Hỗ trợ các hoạt động sản xuất, kinh doanh của Doanh nghiệp.</p>
+                                </div>
+                              </div>
+                            </div>  
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Hệ thống văn phòng điện tử dành cho những doanh nghiệp nào?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Hệ thống Văn phòng điện tử dành cho Doanh nghiệp Hue Office phù hợp cho nhiều mô hình doanh nghiệp đang hoạt động trong nhiều lĩnh vực, 
+                                        kể cả doanh nghiệp vừa và nhỏ, siêu nhỏ. </p>
+                                    <p> Tùy theo quy mô, loại hình dịch vụ và khả năng tài chính của mỗi Doanh nghiệp, Hue Office dễ dàng tùy biến, điều chỉnh cũng như cho phép nâng cấp các tính năng mới 
+                                    theo sự phát triển của Doanh nghiệp trong tương lai.</p>
+
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Chi phí và khả năng ứng dụng của hệ thống văn phòng điện tử dành cho doanh nghiệp
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Chỉ mới một chiếc máy vi tính kết nối Internet, Hệ thống Văn phòng điện tử dành cho Doanh nghiệp Hue Office 
+                                        giúp tối ưu hóa không gian và thời gian làm việc cho những nhân viên 
+                                        trong quá trình làm việc không tập trung nhưng vẫn đạt hiệu quả cao, 
+                                        giúp doanh nghiệp cắt giảm những chi phí không cần thiết như mua giấy tờ, 
+                                        mực in, đầu tư trang thiết bị lưu trữ, chi phí sửa chữa, bảo trì định kỳ máy móc…</p>
+                                    <p> Đường dẫn tham khảo sản phẩm: <b>http://vpdt.huecit.com/</b></p>
+                                    <p> Với mục tiêu xây dựng một “văn phòng số”, Hệ thống Văn phòng điện tử dành cho Doanh nghiệp 
+                                        Hue Office chính là sự lựa chọn lý tưởng cho mọi công ty đang trong tiến trình chuyển đổi số doanh nghiệp.</p>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Những khó khăn của doanh nghiệp khi kinh doanh trên sàn thương mại điện tử?
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Sàn thương mại điện tử được xem là “mảnh đất vàng” để mỗi doanh nghiệp có hoạt động kinh doanh hướng tới 
+                                            khi mua sắm trực tuyến đã trở thành thói quen của người tiêu dùng và là xu hướng của xã hội.</p>
+                                        <p>Tuy nhiên, mỗi doanh nghiệp khi bắt đầu kinh doanh trên các sàn thương mại điện tử ít nhiều đều gặp những 
+                                            khó khăn chung như:
+                                        </p>
+                                        <ul>
+                                            <p class="para-ellipsis">Thiếu mô hình kinh doanh thương mại điện tử phù hợp</p>
+                                            <p class="para-ellipsis">Vấn đề an toàn, an ninh và mã hóa thông tin</p>
+                                            <p class="para-ellipsis">Thiếu đội ngũ cán bộ có trình độ kinh doanh và tin học cần thiết</p>
+                                            <p class="para-ellipsis">Rủi ro xuất phát từ gian lận thương mại</p>
+                                            <p class="para-ellipsis">Thiếu cơ chế quản lý đồng bộ</p>
+                                            <p class="para-ellipsis">...</p>
+                                        </ul>
+                                        <p>Hệ thống Văn phòng điện tử Hue Office với chức năng thiết lập, kết nối đến các sàn thương mại điện tử của 
+                                           Doanh nghiệp (sendo, tinki, lazada, shopee…) giúp Doanh nghiệp dễ dàng quản lý sản phẩm, đăng bán sản phẩm 
+                                           và theo dõi, thống kê hoạt động kinh doanh đồng thời từ các sàn thương mại điện tử này chỉ với một tài khoản duy nhất.</p>
+                                        <p>Với chức năng phân quyền trong Hệ thống, người quản lý Doanh nghiệp dễ dàng điều phối hoạt động kinh doanh chặt chẽ, 
+                                            đảm bảo an toàn thông tin trong quá trình thực hiện.</p>
+                                        
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
                     </div>
                 </div>
                 <!-- Đăng kí chuyển đổi số  -->
@@ -419,11 +503,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Thông tin liên hệ, footer  -->
+            <!-- Thông tin liên hệ, footer  -->
         <div class="bottom-container"> 
             <div class="bottom-address">
-                <div >
+                <div class="bottom-address-image" >
                     <img src="./assets/LogoHueCIT 1.png" class="bottom-address-img">
                 </div>
                 <div class="bottom-address-context">
@@ -464,6 +547,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+        
 </body>
 </html>

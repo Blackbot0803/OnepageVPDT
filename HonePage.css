@@ -102,7 +102,7 @@ input[type=text], select {
   text-decoration: none;
 }
 
-.container {
+.wrapper {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -167,6 +167,7 @@ input[type=text], select {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
   padding: 16px 32px;
+  z-index: 1;
 }
 .signin-button {
   display: flex;
@@ -740,6 +741,31 @@ input[type=text], select {
   padding: 0;
   
 }
+.collapsed {
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--darkblue);
+  background-color: hsla(224, 91%, 43%, 0.1);
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0 32px 16px 32px;
+}
+.accordion-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--textcolor);
+}
+.para-ellipsis {
+  display: list-item;
+  width: 100%;
+}
 
 .faq-text {
   width: 100%;
@@ -1096,8 +1122,14 @@ input[type=text], select {
     flex-direction: column;
     width: 100%;
   }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 3.333% 0;
+    overflow: hidden;
+  }
   .navbar {
-    display: none;
+    
   }
   .banner-content {
     flex-direction: column;
