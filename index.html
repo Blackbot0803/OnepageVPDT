@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" initial-scale="1">        <title>HomePage</title>
+        <meta name="viewport" content="width=device-width,  initial-scale=0.8">        <title>HomePage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -85,21 +85,21 @@
 							</div>
 							<div class="banner_button">
 								<Button class="banner_btn" onclick = "openNav()">Đăng kí dùng thử
-									<i class="fa-solid fa-circle-arrow-right" style="font-size:24px; vertical-align: middle;"></i>
+									<i class="fa-solid fa-circle-arrow-right"></i>
 								</Button>
 							</div>
 						</div>
 						<div class="banner-content_img"><img src="./assets/Group.png" class="banner-img"></div>
                     </div>
 					<div class="scroll-down">
-						<img src="assets/arrow-down-circle.svg" class="filter-blue">
+						<img src="assets/arrow-down-circle.svg" class="filter-blue" onclick="scrollDown()">
 					</div>
                 </div>
                 
                 
             </div>
             <div class="mid-container">
-                <div class="solution">
+                <div class="solution"  id="solution">
                     <div class="solution-title">
                         <h2>BỘ GIẢI PHÁP THƯƠNG MẠI ĐIỆN TỬ CHO DOANH NGHIỆP</h2>
                         <p>Giải pháp số cho doanh nghiệp thời 4.0</p>
@@ -413,7 +413,7 @@
                         </div>
                     </div>
                     <div>
-                        <Button class="signin-100-button"><p>ĐĂNG KÍ NGAY</p>
+                        <Button class="signin-100-button" onclick="openNav()"><p>ĐĂNG KÍ NGAY</p>
                             <img src="assets/right-arrow-circle-thick.png">
                         </Button>
                     </div>

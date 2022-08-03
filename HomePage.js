@@ -11,3 +11,8 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%"
   }
+
+function scrollDown() {
+  const element = document.getElementById("solution");
+   element.scrollIntoView({ block: 'start', behavior: 'smooth'});
+}

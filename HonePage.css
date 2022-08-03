@@ -370,6 +370,7 @@ input[type=text], select {
   margin-left: 16px;
   font-size: 24px;
   align-self: center;
+  vertical-align: center;
 }
 .banner_btn {
   width: auto;
@@ -460,10 +461,11 @@ input[type=text], select {
   padding-bottom: 11.2%;
   border-radius: 0px;
   
+  
 }
 
 .solution-context {
-  
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1069,7 +1071,7 @@ input[type=text], select {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px)  {
+@media screen and (max-width: 500px)  {
   .solution-content {
     display: flex;
     flex-direction: column;
@@ -1099,6 +1101,7 @@ input[type=text], select {
   }
   .banner-content {
     flex-direction: column;
+    
   }
   .banner-content-text-title p {
     width: 100%;
@@ -1205,13 +1208,39 @@ input[type=text], select {
     padding: 0.555% 1.111%;
   }
   .banner_btn {
-    width: 50%;
-    align-self: center;
-    font-size: auto;
-    padding: 0;
+    width: auto;
+    height: 60%;
+    border-radius:50px;
+    border:2px solid #fff;
+    white-space: nowrap;
+    cursor:pointer;
+    color: var(--blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 16px ;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    padding: 16px 32px;
+    line-height: 1.6;
   }
   .banner_button {
     justify-self: center;
+    padding: 10%;
   }
+  .banner_btn i {
+   margin-left: 1%;
+   vertical-align: center;
+  }
+  .banner-content_img {
+    margin: 4%;
+  }
+  .scroll-down img {
+    width: 48px;
+    height: 48px;
+    filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
+    z-index: 50;
+  }
+  
 }
 
