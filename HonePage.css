@@ -1335,6 +1335,7 @@ input[type=text], select {
     right: 5px;
     font-size: 48px;
     cursor: pointer;
+    display: block;
   }
   .sideNav-closeBtn i {
     width: 100%;
