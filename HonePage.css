@@ -363,7 +363,9 @@ input[type=text], select {
   position: relative;
   z-index: 0;
 }
-
+.sideNav-closeBtn{
+  display: none;
+}
 .banner_button {
   padding-top: 40px;
 }
