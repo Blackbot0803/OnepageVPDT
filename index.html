@@ -4,18 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,  initial-scale=0.8">        <title>HomePage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="HonePage.css">
-		<script src="https://kit.fontawesome.com/65a2c1a9b8.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/65a2c1a9b8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="">
         <script type="text/javascript" src="HomePage.js"></script>
-		
+        
     </head>
     <body>
+        
          <!-- Overlay signup form  -->
+
          <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -50,9 +52,13 @@
             <div class="top-container">
                 <div class="banner">
                     <div class="header">
+                      <div class="sideNav-button" onclick="openSideNav()">
+                        <img src="./assets/sidebar.svg" class="sidebar-img">
+                      </div>
                       <div class="logo"><img class="logohue"  src="./assets/LogoHueCIT 1.png"></div>
                     
-                      <div class="navbar">
+                      <div class="navbar sideNav" id="sideNav">
+                        <a href="javascript:void(0)" class="sideNav-closeBtn" onclick="closeSideNav()"><i class="fa-solid fa-xmark fa-3x"></i></a>
                         <div class="navbar-content home"><a href="#home">TRANG CHỦ</a></div>
                         <div class="dropdown" tabindex="1">
                           <i class="db2" tabindex="1"></i>
@@ -69,33 +75,33 @@
                       <div class="signin-button"><Button class="signin" onclick = "openNav()">ĐĂNG KÝ NGAY</Button></div>
                     </div>
                     <div class="banner-content">
-						<div class="banner-content_text">
-							<div class="banner-content_text_dot">
-								<div class="dots" style="--n:5"></div>
-								<div class="dots" style="--n:5"></div>
-								<div class="dots" style="--n:5"></div>
-							</div>
-							<div class="banner-content_text_title">
-								<p>BỘ GIẢI PHÁP</p>
+                        <div class="banner-content_text">
+                            <div class="banner-content_text_dot">
+                                <div class="dots" style="--n:5"></div>
+                                <div class="dots" style="--n:5"></div>
+                                <div class="dots" style="--n:5"></div>
+                            </div>
+                            <div class="banner-content_text_title">
+                                <p>BỘ GIẢI PHÁP</p>
                                 <p>THƯƠNG MẠI ĐIỆN TỬ</p><p>CHO DOANH NGHIỆP</p>
-							</div>
-							<div class="banner-content_text_content">
-								Bộ giải pháp “3 trong 1” giúp Doanh nghiệp 
-								Quản trị nội bộ - Quản trị thông tin - Quản trị 
-								kinh doanh thông minh, hỗ trợ Doanh nghiệp chuyển đổi mô hình doanh nghiệp 
-								truyền thống sang mô hình doanh nghiệp số.
-							</div>
-							<div class="banner_button">
-								<Button class="banner_btn" onclick = "openNav()">Đăng kí dùng thử
-									<i class="fa-solid fa-circle-arrow-right"></i>
-								</Button>
-							</div>
-						</div>
-						<div class="banner-content_img"><img src="./assets/Group.png" class="banner-img"></div>
+                            </div>
+                            <div class="banner-content_text_content">
+                                Bộ giải pháp “3 trong 1” giúp Doanh nghiệp 
+                                Quản trị nội bộ - Quản trị thông tin - Quản trị 
+                                kinh doanh thông minh, hỗ trợ Doanh nghiệp chuyển đổi mô hình doanh nghiệp 
+                                truyền thống sang mô hình doanh nghiệp số.
+                            </div>
+                            <div class="banner_button">
+                                <Button class="banner_btn" onclick = "openNav()">Đăng kí dùng thử
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </Button>
+                            </div>
+                        </div>
+                        <div class="banner-content_img"><img src="./assets/Group.png" class="banner-img"></div>
                     </div>
-					<div class="scroll-down">
-						<img src="assets/arrow-down-circle.svg" class="filter-blue" onclick="scrollDown()">
-					</div>
+                    <div class="scroll-down">
+                        <img src="assets/arrow-down-circle.svg" class="filter-blue" onclick="scrollDown()">
+                    </div>
                 </div>
                 
                 

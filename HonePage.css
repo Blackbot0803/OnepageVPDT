@@ -1258,14 +1258,23 @@ input[type=text], select {
   }
   .banner_button {
     justify-self: center;
-    padding: 10%;
+    padding: 0;
+    width: inherit;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 10% 0;
   }
   .banner_btn i {
-   margin-left: 1%;
+   margin: 0;
    vertical-align: center;
+   align-self: center;
   }
   .banner-content_img {
     margin: 4%;
+  }
+  .banner-content_text {
+    margin: 4.167%;
   }
   .scroll-down img {
     width: 48px;
@@ -1273,6 +1282,84 @@ input[type=text], select {
     filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
     z-index: 50;
   }
+  /* Order */
+  .header {
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #0A3ED1;
+    z-index: 10000;
+    
+  }
+  .logo{
+    order: 2;
+    margin-left: 4.167%;
+  }
+  .navbar{
+    flex-direction: column;
+    background-color: #0A3ED1;
+    order: 1;
+    align-self: flex-start;
+    margin: 0;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 48px;
+    overflow: hidden;
+    transition: 0.35s ease-out;
+    opacity: 0.95;
+  }
+  .sideNav a {
+    font-size: 50%;
+  }
+  .dropdown-content {
+    margin: 0 20%;
+    left: -90%;
+  }
+  .dropdown-content a{
+    font-size: 30%;
+  }
+  .sideNav-closeBtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  .sideNav-closeBtn i {
+    width: 100%;
+    height: 100%;
+  }
+  .signin-button{
+    order: 3;
+  }
   
+  .sideNav::before {
+    
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+  }
+  .sideNav-button {
+    width: 10% ;
+    height: 5%;
+    margin-left: 4.167%;
+  }
+  .sidebar-img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(299deg) brightness(112%) contrast(101%);
+    cursor: pointer;
+  }
+  /* TODO convert navbar to sidebar */
+
+
+
 }
 
