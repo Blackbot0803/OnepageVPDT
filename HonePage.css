@@ -1360,7 +1360,7 @@ input[type=text], select {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(299deg) brightness(112%) contrast(101%);
     cursor: pointer;
   }
-  /* TODO convert navbar to sidebar */
+  
 
 
 
