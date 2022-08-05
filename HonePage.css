@@ -1099,7 +1099,7 @@ input[type=text], select {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 800px) and (min-width: 300px)  {
   .solution-content {
     display: flex;
     flex-direction: column;
