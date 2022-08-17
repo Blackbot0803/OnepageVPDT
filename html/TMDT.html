@@ -18,6 +18,36 @@
     </head>
     <body>
         <div class="container-fluid p-0">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                 <div class="overlay-title"><h3>ĐĂNG KÍ DÙNG THỬ</h3></div>
+                 <div class="overlay-form">
+                    <form class="form">
+                        <div class="input-line">
+                            <input type="text" name="fName" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="phoneNumber" placeholder="Số điện thoại" required>
+                            <input type="text" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="companyName" placeholder="Tên doanh nghiệp" required>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="role" placeholder="Chức vụ" required>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="address" placeholder="Địa chỉ" required>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="scale" placeholder="Quy mô" required>
+                        </div>
+                        <button class="form-button" type="submit">ĐĂNG KÍ</button>
+                    </form>
+                 </div>
+                </div>
+              </div>
             <div class="top-container">
                 <div class="header">
                     <div class="logo">
@@ -190,8 +220,9 @@
                             cho Doanh nghiệp từ các sàn thương mại điện tử, hỗ trợ bán hàng đa kênh.</p>
                     </div>
                     <div class="trial-button">
-                        <button class="trial-btn">ĐĂNG KÝ DÙNG THỬ</button>
-                        <button class="view-btn">XEM MÔ HÌNH MẪU</button>
+                        <button class="trial-btn" onclick="openNav()">ĐĂNG KÝ DÙNG THỬ</button>
+                        <button class="view-btn"><a href="http://vpdt.huecit.com/%C4%90ang-nhap?returnurl=%2fTrang-chu-VP%C4%90T" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">XEM MÔ HÌNH MẪU</a></button>
+                    </div>
                     </div>
                 </div>
                 <div class="signin-100">

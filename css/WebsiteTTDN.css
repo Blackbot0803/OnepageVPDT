@@ -4,7 +4,95 @@
     --textcolor: #555C71;
     --red: #EB5A4D;
   }
-
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 25%;
+    top: 15%;
+    overflow: hidden;
+    transition: 0.5s;
+    justify-content: flex-start;
+  }
+  
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 0 32px;
+  
+    top: 25%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  .overlay-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 32px;
+    color: var(--blue);
+    margin: 0 0 32px 0;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-bottom: 32px;
+  }
+  
+  .input-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 8px;
+  }
+  input[type=text], select {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+  
+  
+  
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #0A1D52;
+    font-weight: normal;
+  }
+  .form-button {
+    margin-top: 12px;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    background-color: #EB5A4D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    font-size: 48px;
+    text-decoration: none;
+  }
+  
 .top-container {
     background-color: var(--blue);
     padding: 0 7.777% !important;
@@ -525,7 +613,11 @@
   line-height: 24px;
   cursor: pointer;
 }
-
+.view-btn a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
 /* ---------------- Đăng kí dùng thử 100 ngày -------------- */
 
 .signin-100 {
