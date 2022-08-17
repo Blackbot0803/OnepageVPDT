@@ -3,11 +3,11 @@
     --darkblue: #0A1D52;
     --textcolor: #555C71;
     --red: #EB5A4D;
-    --periwinkle: #3E0AD0;
+    --lightblue: #0AC0D1;
   }
 
 .top-container {
-    background-color: var(--periwinkle);
+    background-color: var(--lightblue);
     padding: 0 7.777% !important;
     display: flex;
     flex-direction: column;
@@ -174,8 +174,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    justify-items: center;
-    align-items: center;
     column-gap: 24px;
     padding-bottom: 60px;
 }
@@ -192,12 +190,6 @@
 }
 
 .banner-content-text-title p {
-    font-size: 48px;
-    color: #fff;
-    margin: 0 0 20px 0;
-    font-family: 'Open Sans', sans-serif;
-}
-.banner-content-text-title p1 {
     font-size: 48px;
     color: #fff;
     margin: 0 0 20px 0;
@@ -227,18 +219,7 @@
     font-weight: 400;
     margin: 0;
 }
-.banner-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    justify-self: center;
-}
-.banner-img img {
-    width: 100%;
-    height: 100%;
-}
+
 .banner-button {
     padding-top: 40px;
   }
@@ -255,14 +236,23 @@
     border:2px solid #fff;
     white-space: nowrap;
     cursor:pointer;
-    color: var(--blue);
+    color: var(--lightblue);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
+    
     padding: 16px 32px;
     line-height: 1.6;
+}
+
+.banner-img {
+  position: absolute;
+  right: 0;
+  top: 23%
+}
+.banner-img img {
+  width: 80%;
 }
 /* -------------Middle Container------------ */
 
@@ -281,7 +271,6 @@
   column-gap: 3.333%;
   background-color: #F3F7FF;
   padding-top: 4.167% ;
-  padding-bottom: 4.167% ;
 }
 .info-image {
 
@@ -334,8 +323,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 2.3%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
   max-height: 65vh;
   padding: 0;
   margin: 0;
@@ -349,6 +338,7 @@
   margin-right: 3.8%;
   align-items: center;
   margin-bottom: 2.3%;
+  background-color: #FFFFFF;
   
 }
 
@@ -387,123 +377,7 @@
   background-color: var(--blue);
   border-radius: 4px;
 }
-/*----------------TIỆN ÍCH NỔI BẬT --------------- */
 
-.application-wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: #F3F7FF;
-    background-image: url("../assets/application-background-vector.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.application-background {
-  
-}
-.application-title {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-.application-title h1 {
-  font-family: 'Open sans', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 32px;
-  color: var(--blue);
-}
-
-.application-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.application-context {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-left: 7.777%;
-  column-gap: 32px;
-  align-items: stretch;
-}
-.application-img {
-  height: 100%;
-  width: 50%;
-}
-
-.application-context-col {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
-
-.application-context-item {
-  flex-basis: 33.333%;
-  display: flex;
-  flex-direction: column;
-  /* row-gap: 9%; */
-  padding: 0 3%;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  border: 0.5px solid;
-  border-radius: 16px;
-  border-color: hsla(224, 91%, 43%, 0.24);
-  box-shadow: 1px 1px 4px hsla(224, 91%, 43%, 0.24);
-}
-
-.application-context-item h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 11.4% ;
-  margin-right: 16%;
-  color: var(--darkblue);
-}
-
-.application-context-item p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 16%;
-  margin-left: 11.4%;
-  margin-right: 16%;
-  color: var(t);
-}
-
-.application-context-item-icon{
-  margin: 16% 0 6.666% 11.4%;
-}
-
-.col2 {
-  justify-content: center;
-  align-content: center;
-  margin: 25% 0;
-}
-
-
-.application-img {
-  justify-self: center;
-  width: auto;
-  height: auto;
-  margin-right: 7.777%;
-  margin-left: 1.38%;
-}
-
-.application-img img {
-  width: 100%;
-  height: 100%;
-}
 
 
 /* --------------CÁC PHÂN HỆ CHỨC NĂNG --------- */
@@ -566,7 +440,6 @@
 
 .function-item-icon img{
   margin-top: 9%;
-  
 }
 
 
@@ -592,16 +465,16 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 4.167% 0 0 0;
 }
 .trial-title {
-  width: 56%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   row-gap: 3.8%;
-  padding: 0 0 0 7.777%;
+  padding: 0 7.777% 0 7.777%;
   background-color: #EB5A4D;
 }
 
@@ -612,30 +485,33 @@
   font-size: 3rem;
   line-height: auto;
   color: #FFFFFF;
+  text-align: center;
 }
 .trial-title p {
-  margin-bottom: 4.167%;
+  margin-bottom: 3.333%;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: auto;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .trial-button {
   height: 100%;
-  width: 46%;
-  padding: 3.6% 0;
+  width: 100%;
+  /* padding: 3.6% 0; */
   display: flex;
   flex-direction: row;
-  column-gap: 2.5%;
+  column-gap: 1.111%;
   padding-left: 2.222%;
-  background-color: rgba(235, 89, 76, 0.80);
+  background-color: #EB5A4D;
   height: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-right: 7.777%;
+  padding-bottom: 4.167%;
 }
 
 .trial-btn {
